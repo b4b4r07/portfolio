@@ -449,7 +449,32 @@ footer .footer-below {
     opacity: 0;
 }
 
+/*
 <!--[if !IE]><!-->
+@media only screen and (max-width:420px){
+    tbody tr{
+        display: block;
+        margin-bottom: 1.5em;
+    }
+    tbody th,
+    tbody td{
+        display: list-item;
+        border: none;
+    }
+}
+@media only screen and (max-width:480px){
+    .badge { margin: 0 -10px; }
+    .badge th,
+    .badge td{
+        width: 100%;
+        display: block;
+        border-top: none;
+        background: #FFFFFF;
+    }
+    .badge tr:first-child th   { border-top: 1px solid #ddd; }
+}
+*/
+
 @media only screen and (max-width:480px){
     table {
         border: none;
@@ -474,4 +499,3 @@ footer .footer-below {
         border:none;
     }
 }
-<!--<![endif]-->
